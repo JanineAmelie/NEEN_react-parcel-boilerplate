@@ -77,3 +77,17 @@ Refer to the deployment guide in `create-react-app`, just note that you will
 need to account for the fact that Parcel builds out to a `dist` directory, while
 CRA builds to a `build` directory. You can make it identical by adding
 `--out-dir build` to both `start` and `build` npm tasks in `package.json`.
+
+---
+
+# FAQs/Issue fixes
+
+### I'm getting a long error message after `yarn`-ing regarding failing to install `fsevents`
+
+This is fixed by running the following commands:
+
+```bash
+   $ rm yarn.lock
+   $ yarn cache clean
+   $ yarn install
+```
