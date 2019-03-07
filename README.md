@@ -1,4 +1,17 @@
-# VF Carousel
+# react-parcel-boilerplate
+
+> Quick and easy boilerplate startup with parcel
+
+## Features
+
+- Parcel
+- Babel 6
+- Babel-eslint
+- Eslint
+- Prettier (on save)
+- Airbnb Eslint Rules
+- Styled Components 3
+- React 16
 
 ## Getting started
 
@@ -7,7 +20,7 @@ yarn
 yarn start
 ```
 
-Then open `http://localhost:1234` and edit `index.js` and press save. Parcel
+Then open `http://localhost:1234` and edit `src/index.js` and press save. Parcel
 will automagically hot reload you files whenever you make changes.
 
 ## Building for Production
@@ -28,10 +41,14 @@ If you'd rather keep your PostCSS setup in a dotfile, you can delete the
 `postcss` key from `package.json`, and place its contents in a `.postcssrc` file
 too.
 
+---
+
 ## Folder structure and relative paths
 
 Keeping everything in the root directory obviously won't scale past a point.
-Parcel is very flexible about folder structure, but there are a few gotchas.
+Parcel is very flexible about folder structure, but there are
+
+**a few gotchas**:
 
 ### Moving JS entry
 
@@ -51,6 +68,8 @@ make the following change to `index.html`:
 
 If you want to move `index.html`, you will need to update your npm scripts in
 `package.json` with the new relative path.
+
+---
 
 ## Deployment
 
